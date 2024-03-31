@@ -1,9 +1,3 @@
-{{
-    config(
-        materialized='table'
-    )
-}}
-
 with unpivot_src_data as (
 {{
     dbt_utils.unpivot(
