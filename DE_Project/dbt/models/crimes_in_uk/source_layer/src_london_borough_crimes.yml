@@ -1,0 +1,13 @@
+version: 2
+
+sources:
+  - name: source
+    database: dezoomcamp-411914
+    schema: crimes_in_uk
+
+    tables:
+      - name: london_borough
+
+models:
+    - name: london_borough
+      description: "Dataset with number of crimes made through each month since 2022 in every borough of London."
