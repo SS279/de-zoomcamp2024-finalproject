@@ -1,0 +1,17 @@
+version: 2
+
+models:
+  - name: rpt_london_borough_crimes
+    description: "Dataset with number of crimes made through each month since 2022 in every borough of London."
+
+    columns:
+      - name: crime_category
+        description: "Category to which the committed crime belong"
+      - name: crime_type
+        description: "Type to which the committed crime belong. Basically sub-category of crime committed."
+      - name: london_borough_name
+        description: "Name of london borough where crime was committed"
+      - name: month_year
+        description: "Month and year when crime was committed"
+      - name: no_of_crimes_committed
+        description: "Total number of crimes committed"

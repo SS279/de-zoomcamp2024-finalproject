@@ -1,0 +1,18 @@
+version: 2
+
+models:
+  - name: stg_london_borough_crimes
+    description: "Dataset with number of crimes made through each month since 2022 in every borough of London."
+
+    tests:
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: crime_category
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: crime_type
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: london_borough_name
+      - dbt_expectations.expect_column_values_to_not_be_null:
+          column_name: month_year
+      - dbt_expectations.expect_compound_columns_to_be_unique:
+          column_list:
+            ["crime_category", "crime_type", "london_boroughname", "month_year"]
