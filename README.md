@@ -4,7 +4,7 @@
 This project is focused on building a data pipeline for extracting, staging, ingesting, and transforming data from an API source into Google BigQuery for further analysis and reporting. The pipeline is orchestrated using Mage with additional infrastructure setup managed by Terraform. Transformation and modeling of data are conducted using dbt Cloud, with reporting facilitated through Google Looker.
 
 ## Looker Dashboard
-Please find the link to the Looker dashboard here - [Crimes in London Boroughs](https://lookerstudio.google.com/s/nSxsOSAXNk8)
+Please find the link to Looker dashboard here - [Crimes in London Boroughs](https://lookerstudio.google.com/s/nSxsOSAXNk8)
 
 ## Technologies Used
 - Mage: Orchestration tool for data pipelines.
